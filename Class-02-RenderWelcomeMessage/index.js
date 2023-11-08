@@ -4,3 +4,5 @@ let name = "Wagner Araujo"
 let greeting = "Welcome back"
 
 welcomeEL.innerText = greeting + " " + name
+
+welcomeEL.innerText += " 👋"
