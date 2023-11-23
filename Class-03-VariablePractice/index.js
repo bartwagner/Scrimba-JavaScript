@@ -33,9 +33,22 @@ document.getElementById("calc").innerText = 'How much 3+3-1+3-1+3 = ' + myPoints
 document.getElementById("div3").innerText = '------------------------------------------------------------------------'
 
 
-console.log("2" + 2) // "22"
-console.log(11 + 7) // 18
-console.log(6 + "5") // "65"
-console.log("My points: " + 5 + 9) // "My points: 59"
-console.log(2 + 2) //  4
-console.log("11" + "14") // "1114" 
+//"2" + 2 = "22"
+document.getElementById("calc1").innerText = "2" + 2
+//11 + 7 = 18
+document.getElementById("calc2").innerText = 11 + 7
+//6 + "5" = "65"
+document.getElementById("calc3").innerText = 6 + "5"
+//"My points: " + 5 + 9 = My points: 59 
+document.getElementById("calc4").innerText = "My points: " + 5 + 9
+//2 + 2 = 4
+document.getElementById("calc5").innerText = 2 + 2
+//"11" + "14" = "1114"
+document.getElementById("calc6").innerText = "11" + "14"
+document.getElementById("div4").innerText = '------------------------------------------------------------------------'
+
+let errorParagraph = document.getElementById("error")
+
+function purchase() {
+    errorParagraph.innerText = "Something went wrong, please try again"
+}
