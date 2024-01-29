@@ -11,8 +11,11 @@ const moviesInDB = ref(database, "movies")
 
 const inputFieldEl = document.getElementById("input-field")
 const addButtonEl = document.getElementById("add-button")
+const movieListEl = document.getElementById("movie-list")
 
 addButtonEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
     push(moviesInDB, inputValue)
+    inputFieldEl.value = ""
+    movieListEl.innerHTML +=`<li>${inputValue}</li>`
 })
